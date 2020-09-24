@@ -1,0 +1,4 @@
+docker build -t ptbox .
+
+docker run -it -v $1:/data ptbox --task passwords --root /data
+docker run -it -v $1:/data ptbox --task file_types --root /data
